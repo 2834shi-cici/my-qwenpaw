@@ -9,7 +9,7 @@ export interface ThemePreset {
 export const THEME_PRESETS: readonly ThemePreset[] = [
   {
     id: "qwenpaw",
-    name: "QwenPaw",
+    name: "cici的工作台",
     theme: {
       accent: "#ff7f16",
       accent_hover: "#e96f0b",

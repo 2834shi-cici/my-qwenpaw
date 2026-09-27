@@ -20,10 +20,10 @@ warn_if_auth_off_container_bind() {
 
   cat >&2 <<EOF
 ============================================================
-SECURITY NOTICE: QwenPaw is running in Docker without authentication.
+SECURITY NOTICE: cici的工作台 is running in Docker without authentication.
 
-QwenPaw cannot verify whether access to the service is limited to a trusted
-network. Anyone who can reach the service may access QwenPaw APIs without login.
+cici的工作台 cannot verify whether access to the service is limited to a trusted
+network. Anyone who can reach the service may access cici的工作台 APIs without login.
 
 Recommended:
   - Restrict access to a trusted network or protected environment.
@@ -37,7 +37,7 @@ EOF
 if [ ! -f "${QWENPAW_WORKING_DIR}/config.json" ]; then
   echo "⚠️  No config.json found in ${QWENPAW_WORKING_DIR}"
   echo "📦 Running initialization..."
-  qwenpaw init --defaults --accept-security
+  cici init --defaults --accept-security
   echo "✅ Initialization complete!"
 else
   echo "✓ Config found in ${QWENPAW_WORKING_DIR}, skipping initialization."

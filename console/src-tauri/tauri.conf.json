@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "QwenPaw Desktop",
-  "identifier": "io.agentscope.qwenpaw.desktop",
+  "productName": "cici的工作台",
+  "identifier": "io.cici.workbench.desktop",
   "build": {
     "frontendDist": "../dist-tauri",
     "devUrl": "http://localhost:5173/tauri.html",
@@ -12,7 +12,7 @@
     "withGlobalTauri": false,
     "windows": [
       {
-        "title": "QwenPaw Desktop",
+        "title": "cici的工作台",
         "width": 1280,
         "height": 800,
         "minWidth": 960,

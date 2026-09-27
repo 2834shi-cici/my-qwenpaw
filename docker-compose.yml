@@ -1,18 +1,18 @@
 version: '3.8'
 
 volumes:
-  qwenpaw-data:
-    name: qwenpaw-data
-  qwenpaw-secrets:
-    name: qwenpaw-secrets
-  qwenpaw-backups:
-    name: qwenpaw-backups
+  cici-workbench-data:
+    name: cici-workbench-data
+  cici-workbench-secrets:
+    name: cici-workbench-secrets
+  cici-workbench-backups:
+    name: cici-workbench-backups
 
 services:
-  qwenpaw:
-    image: agentscope/qwenpaw:latest
+  cici-workbench:
+    image: cici/cici-workbench:latest
     init: true
-    container_name: qwenpaw
+    container_name: cici-workbench
     restart: always
     ports:
       - "127.0.0.1:8088:8088"
@@ -21,6 +21,6 @@ services:
     #   - QWENPAW_AUTH_USERNAME=admin
     #   - QWENPAW_AUTH_PASSWORD=yourpassword
     volumes:
-      - qwenpaw-data:/app/working
-      - qwenpaw-secrets:/app/working.secret
-      - qwenpaw-backups:/app/working.backups
+      - cici-workbench-data:/app/working
+      - cici-workbench-secrets:/app/working.secret
+      - cici-workbench-backups:/app/working.backups

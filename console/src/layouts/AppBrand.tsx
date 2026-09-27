@@ -188,8 +188,10 @@ export default function AppBrand({
     })
       .then((response) => (response.ok ? response.text() : Promise.reject()))
       .then((text) => {
-        const zhPattern = /###\s*QwenPaw如何更新[\s\S]*?(?=\n###|$)/;
-        const enPattern = /###\s*How to update QwenPaw[\s\S]*?(?=\n###|$)/;
+        // Rebrand: upstream FAQ headings still say "QwenPaw". Match any
+        // "如何更新" / "How to update" heading regardless of brand name.
+        const zhPattern = /###\s*.*如何更新[\s\S]*?(?=\n###|$)/;
+        const enPattern = /###\s*How to update[\s\S]*?(?=\n###|$)/;
         const match = text.match(faqLanguage === "zh" ? zhPattern : enPattern);
         setUpdateMarkdown(
           match && language !== "ru"
@@ -288,8 +290,8 @@ export default function AppBrand({
         <span className={styles.appBrandLogo} onClick={handleLogoClick}>
           <Slot name="header.logo" kind="replace">
             <img
-              src={isDark ? "/logo-dark.svg" : "/logo-light.svg"}
-              alt="QwenPaw"
+              src={isDark ? "/logo-dark.png" : "/logo-light.png"}
+              alt="cici的工作台"
               className={styles.logoImg}
             />
           </Slot>

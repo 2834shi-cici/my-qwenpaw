@@ -118,7 +118,7 @@ pub fn run() {
             });
         }
         Err(err) => {
-            eprintln!("[QwenPaw Desktop] Fatal startup error: {err}");
+            eprintln!("[cici的工作台] Fatal startup error: {err}");
             std::process::exit(1);
         }
     }

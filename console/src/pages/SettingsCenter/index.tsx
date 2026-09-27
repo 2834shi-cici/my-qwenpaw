@@ -156,7 +156,7 @@ const SETTINGS_GROUPS: SettingsGroupDefinition[] = [
         fallback: "Import",
         descriptionKey: "portabilityImport.description",
         descriptionFallback:
-          "Bring conversations and tool settings from other AI applications into QwenPaw.",
+          "Bring conversations and tool settings from other AI applications into cici的工作台.",
         routeId: "core.import",
         Icon: Download,
       },
@@ -181,7 +181,7 @@ const SETTINGS_GROUPS: SettingsGroupDefinition[] = [
         labelKey: "nav.agents",
         fallback: "Agents",
         descriptionKey: "settingsCenter.descriptions.agents",
-        descriptionFallback: "QwenPaw, Codex and Qoder profiles",
+        descriptionFallback: "cici的工作台, Codex and Qoder profiles",
         routeId: "core.agents",
         Icon: Bot,
       },

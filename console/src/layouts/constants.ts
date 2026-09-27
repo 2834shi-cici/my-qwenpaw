@@ -79,22 +79,22 @@ export const compareVersions = (a: string, b: string): number => {
 // ── Update markdown ───────────────────────────────────────────────────────
 // TODO
 export const UPDATE_MD: Record<string, string> = {
-  zh: `### QwenPaw如何更新
+  zh: `### cici的工作台如何更新
 
-要更新 QwenPaw 到最新版本，可根据你的安装方式选择对应方法：
+要更新 cici的工作台 到最新版本，可根据你的安装方式选择对应方法：
 
 1. 如果你使用的是一键安装脚本，直接重新运行安装命令即可自动升级。
 
 2. 如果你是通过 pip 安装，在终端中执行以下命令升级：
 
 \`\`\`
-qwenpaw update
+cici update
 \`\`\`
 
 3. 如果你是从源码安装，进入项目目录并拉取最新代码后重新安装：
 
 \`\`\`
-cd QwenPaw
+cd my-qwenpaw
 git pull origin main
 cd console && npm ci && npm run build
 cd .. && mkdir -p src/qwenpaw/console
@@ -105,28 +105,28 @@ pip install -e .
 4. 如果你使用的是 Docker，拉取最新镜像并重启容器：
 
 \`\`\`
-docker pull agentscope/qwenpaw:latest
-docker run -p 127.0.0.1:8088:8088 -v qwenpaw-data:/app/working -v qwenpaw-secrets:/app/working.secret -v qwenpaw-backups:/app/working.backups agentscope/qwenpaw:latest
+docker pull cici/cici-workbench:latest
+docker run -p 127.0.0.1:8088:8088 -v cici-workbench-data:/app/working -v cici-workbench-secrets:/app/working.secret -v cici-workbench-backups:/app/working.backups cici/cici-workbench:latest
 \`\`\`
 
-升级后重启服务 qwenpaw app。`,
+升级后重启服务 cici app。`,
 
-  ru: `### Как обновить QwenPaw
+  ru: `### Как обновить cici的工作台
 
-Чтобы обновить QwenPaw, выберите способ в зависимости от типа установки:
+Чтобы обновить cici的工作台, выберите способ в зависимости от типа установки:
 
 1. Если вы устанавливали через однострочный скрипт, повторно запустите установщик для обновления.
 
 2. Если устанавливали через pip, выполните:
 
 \`\`\`
-qwenpaw update
+cici update
 \`\`\`
 
 3. Если устанавливали из исходников, получите последние изменения и переустановите:
 
 \`\`\`
-cd QwenPaw
+cd my-qwenpaw
 git pull origin main
 cd console && npm ci && npm run build
 cd .. && mkdir -p src/qwenpaw/console
@@ -137,28 +137,28 @@ pip install -e .
 4. Если используете Docker, загрузите новый образ и перезапустите контейнер:
 
 \`\`\`
-docker pull agentscope/qwenpaw:latest
-docker run -p 127.0.0.1:8088:8088 -v qwenpaw-data:/app/working -v qwenpaw-secrets:/app/working.secret -v qwenpaw-backups:/app/working.backups agentscope/qwenpaw:latest
+docker pull cici/cici-workbench:latest
+docker run -p 127.0.0.1:8088:8088 -v cici-workbench-data:/app/working -v cici-workbench-secrets:/app/working.secret -v cici-workbench-backups:/app/working.backups cici/cici-workbench:latest
 \`\`\`
 
-After upgrading, restart the service with \`qwenpaw app\`.`,
+After upgrading, restart the service with \`cici app\`.`,
 
-  en: `### How to update QwenPaw
+  en: `### How to update cici的工作台
 
-To update QwenPaw, use the method matching your installation type:
+To update cici的工作台, use the method matching your installation type:
 
 1. If installed via one-line script, re-run the installer to upgrade.
 
 2. If installed via pip, run:
 
 \`\`\`
-qwenpaw update
+cici update
 \`\`\`
 
 3. If installed from source, pull the latest code and reinstall:
 
 \`\`\`
-cd QwenPaw
+cd my-qwenpaw
 git pull origin main
 cd console && npm ci && npm run build
 cd .. && mkdir -p src/qwenpaw/console
@@ -169,9 +169,9 @@ pip install -e .
 4. If using Docker, pull the latest image and restart the container:
 
 \`\`\`
-docker pull agentscope/qwenpaw:latest
-docker run -p 127.0.0.1:8088:8088 -v qwenpaw-data:/app/working -v qwenpaw-secrets:/app/working.secret -v qwenpaw-backups:/app/working.backups agentscope/qwenpaw:latest
+docker pull cici/cici-workbench:latest
+docker run -p 127.0.0.1:8088:8088 -v cici-workbench-data:/app/working -v cici-workbench-secrets:/app/working.secret -v cici-workbench-backups:/app/working.backups cici/cici-workbench:latest
 \`\`\`
 
-After upgrading, restart the service with \`qwenpaw app\`.`,
+After upgrading, restart the service with \`cici app\`.`,
 };
