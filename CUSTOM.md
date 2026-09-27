@@ -66,8 +66,22 @@
 | 文件 | 修改内容 |
 |------|---------|
 | `README.md` | H1 标题 → "cici的工作台"；Logo alt 文本 → "cici的工作台 Logo" |
+| `tests/unit/test_design_input_state.py` | **新增**，设计输入状态回归测试：确认 `docs/design/DESIGN.md`、`platforms.md`、`references/*.png` 不存在，PRD 声明与之一致 |
 
-### 2. Logo / 图标资源（新增/替换）
+### 2. 设计输入确认（Issue #2）
+
+本品牌替换为 **spec-driven**，沿用现有 Console 设计系统，**不新建** `docs/design/`：
+
+| 确认项 | 状态 | 说明 |
+|--------|------|------|
+| `docs/design/DESIGN.md` | 不存在 | PRD 末尾摘要已声明本 PRD 不涉及新设计系统 |
+| `docs/design/platforms.md` | 不存在 | 单端 `default`，无多端规格 |
+| `docs/design/references/*.png` | 不存在 | spec-driven，无 mockup PNG |
+| PRD「待扩展 DESIGN §5」 | 无 | 沿用现有组件，无新设计原语 |
+
+回归守卫：`tests/unit/test_design_input_state.py` 在 CI 中验证上述状态。
+
+### 3. Logo / 图标资源（新增/替换）
 
 | 文件 | 说明 |
 |------|------|
@@ -81,7 +95,7 @@
 | `scripts/pack/assets/icon.ico` | **替换**，Windows 多尺寸图标（16/32/48/64/128/256） |
 | `scripts/pack/assets/icon.svg` | **替换**，SVG 占位（简单文字 "cici"） |
 
-### 3. FAQ 正则修正（保留上游 URL）
+### 4. FAQ 正则修正（保留上游 URL）
 
 **文件**: `console/src/layouts/AppBrand.tsx`
 
