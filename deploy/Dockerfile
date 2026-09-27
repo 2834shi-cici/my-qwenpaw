@@ -91,7 +91,7 @@ ENV QWENPAW_RUNNING_IN_CONTAINER=1
 
 WORKDIR ${WORKSPACE_DIR}
 
-# Keep Debian's Python for system services; use the desktop runtime for QwenPaw.
+# Keep Debian's Python for system services; use the desktop runtime for cici的工作台.
 COPY scripts/pack-tauri/stage_python_runtime.py /tmp/stage_python_runtime.py
 RUN python3 /tmp/stage_python_runtime.py \
     --dest /opt/qwenpaw-python --python-version 3.11 \
@@ -120,7 +120,7 @@ RUN uv pip install --python /app/venv/bin/python \
     --no-cache-dir . "setuptools<82" && rm -rf ./build
 
 
-# QwenPaw app port (default 8088). Override at runtime with -e QWENPAW_PORT=3000.
+# cici的工作台 app port (default 8088). Override at runtime with -e QWENPAW_PORT=3000.
 ENV QWENPAW_PORT=8088
 
 COPY deploy/config/supervisord.conf.template /etc/supervisor/conf.d/supervisord.conf.template

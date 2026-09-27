@@ -1,5 +1,7 @@
 version: '3.8'
 
+name: cici-workbench
+
 volumes:
   cici-workbench-data:
     name: cici-workbench-data
