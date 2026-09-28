@@ -66,6 +66,7 @@
 | 文件 | 修改内容 |
 |------|---------|
 | `README.md` | H1 标题 → "cici的工作台"；Logo alt 文本 → "cici的工作台 Logo" |
+| `tests/unit/cli/test_cli_rebrand.py` | **新增**（Issue #3），CLI 品牌替换回归测试：验证 `[project].name=cici-workbench`、`cici`/`copaw` 入口指向 `qwenpaw.cli.main:cli`、`cici --help`/`copaw --help` 正常输出 |
 
 ### 2. Logo / 图标资源（新增/替换）
 
